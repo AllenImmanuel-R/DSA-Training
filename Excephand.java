@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main{
+class Excephand{
     public static void main(String[] args) {
         int a []= {56,45,34,23,12};
         int n = a.length;
