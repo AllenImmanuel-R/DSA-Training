@@ -1,26 +1,20 @@
-interface A {
-    void m1();
-}
+import java.util.Scanner;
 
-interface B {
-    void m1();
-}
-
-class C implements A {
-    public void m1() {
-        System.out.println("Method m1 from interface A");
-    }
-}
-class D implements B {
-    public void m1() {
-        System.out.println("Method m1 from interface B");
-    }
-}
-public class Main {
+class Main{
     public static void main(String[] args) {
-        C c = new C();
-        c.m1(); 
-        D d = new D();
-        d.m1(); 
+        int a []= {56,45,34,23,12};
+        int n = a.length;
+        Scanner sc = new Scanner(System.in);
+        int key= sc.nextInt();
+        try {
+            for(int i=0;i<n;i++){
+                System.out.println(a[i]/key);
+                }
+            }
+            catch(ArithmeticException e) {
+                System.out.println("Arithmetic Exception");
+                
+        }
     }
-}
+    
+}   
