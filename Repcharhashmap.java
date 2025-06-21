@@ -13,7 +13,6 @@ class Repcharhashmap {
                 charCountMap.put(lowerC, charCountMap.getOrDefault(lowerC, 0) + 1);
             }
         }
-        // Find the most frequent character
         for (char c : charCountMap.keySet()) {
             if( charCountMap.get(c) > 1) {
                 System.out.println("Character: " + c + ", Count: " + charCountMap.get(c));
